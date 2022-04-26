@@ -17,7 +17,7 @@
 
 .description {
     width: 100%;
-    padding-right: 10px;
+    padding: 10px;
     text-align: center;
     overflow: auto;
 }
