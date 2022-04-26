@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Main.module.css'
 import styleContainer from '../../common/styles/Container.module.css'
-import Project from "../projects/project/Project";
 
 function Main() {
     return (
@@ -14,7 +13,9 @@ function Main() {
                         Front-end Developer
                     </p>
                 </div>
-                <div className={s.photo}></div>
+                <div className={s.photo}>
+                    Here will be photo
+                </div>
             </div>
         </div>
     );
