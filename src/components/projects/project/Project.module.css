@@ -1,0 +1,72 @@
+.project {
+    width: 500px;
+    background-color: #f7f7f7;
+}
+
+.image {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+    background-color: grey;
+    color: white;
+}
+
+.descriptionMainContainer {
+    width: 100%;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5baba4;
+}
+
+.descriptionContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    background-color: lightgrey;
+    display: inline-block;
+}
+
+.description {
+    min-height: 60px;
+    background-color: lightgrey;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+    .project {
+        margin-top: 10px;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .button {
+        width: 140px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+
+
+}

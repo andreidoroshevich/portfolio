@@ -1,0 +1,45 @@
+.mainBlock {
+    min-height: 100vh;
+    background-color: #ffd4f0;
+    display: flex;
+    align-items: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.photo {
+    width: 400px;
+    height: 400px;
+    background-color: #f7f7f7;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .text {
+        margin-top: 10px;
+    }
+
+    .photo {
+        width: 320px;
+        height: 320px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .text {
+        width: 450px;
+        background-color: #f7f7f7;
+        font-size: 22px;
+    }
+}
+
+
+

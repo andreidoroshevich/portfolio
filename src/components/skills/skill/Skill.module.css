@@ -1,0 +1,39 @@
+.skill {
+    width: 300px;
+    min-height: 200px;
+    background-color:#f7f7f7;
+    text-align: center;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #99d0fb;
+    margin: 0 auto;
+}
+
+.description {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .skill {
+        width: 450px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+
+
+}
