@@ -9,9 +9,10 @@ function Projects() {
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <h2 className={s.title}>My Projects</h2>
                 <div className={s.projects}>
-                    <Project title={"Social Network"}/>
-                    <Project title={"ToDo List"}/>
-
+                    <Project title={"Social Network"} description={"Description of the Project"}/>
+                    <Project title={"ToDo List"} description={"Description of the Project"}/>
+                    <Project title={"BookShelf"} description={"Description of the Project"}/>
+                    <Project title={"Counter"} description={"Description of the Project"}/>
                 </div>
             </div>
 

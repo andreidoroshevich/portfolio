@@ -1,5 +1,5 @@
 .footerBlock {
-    background-color: #b682a8;
+    background-color: #eabcdf;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -30,7 +30,7 @@ h3.title {
 .square {
     width: 90px;
     height: 90px;
-    background-color: red;
+    background-color: #bed5ac;
 }
 
 

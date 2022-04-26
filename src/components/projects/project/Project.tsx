@@ -3,7 +3,7 @@ import s from './Project.module.css'
 
 type ProjectPropsType = {
     title: string
-    // description: string
+    description: string
 }
 
 
@@ -15,8 +15,8 @@ function Project(props: ProjectPropsType) {
             </div>
             <div className={s.descriptionMainContainer}>
                 <div className={s.descriptionContainer}>
-                   <div><h2 className={s.title}>Project Title</h2></div>
-                    <div><h3 className={s.description}>Project description</h3></div>
+                   <div><h2 className={s.title}>{props.title}</h2></div>
+                    <div><h3 className={s.description}>{props.description}</h3></div>
                 </div>
 
             </div>

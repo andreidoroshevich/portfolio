@@ -9,9 +9,9 @@ function Skills() {
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <h2 className={s.title}>My Skills</h2>
                 <div className={s.skills}>
-                    <Skill title={"JS"} description={"JS description JS description JS description JS description JS description JS description JS description JS description JS description JS description JS"}/>
-                    <Skill title={"CSS"} description={"description CSS description CSS description CSS description CSS"}/>
-                    <Skill title={"React"} description={"description React description React description React description React"}/>
+                    <Skill title={"JS"} description={"detailed description of the skill"}/>
+                    <Skill title={"CSS"} description={"detailed description of the skill"}/>
+                    <Skill title={"React"} description={"detailed description of the skill"}/>
                 </div>
             </div>
 
