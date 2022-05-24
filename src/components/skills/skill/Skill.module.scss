@@ -1,0 +1,66 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+
+.skill {
+  width: 300px;
+  min-height: 200px;
+  background-color: $bgSecondColor;
+  @include flex(center, center);
+  flex-direction: column;
+  margin-top: 20px;
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    @include flex(center, center);
+    background-color: $bgFirstColor;
+    margin: 25px 0 auto;
+    transform: rotate(45deg);
+
+    .iconPicture {
+      width: 60%;
+      height: 60%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: rotate(-45deg);
+      z-index: 5000;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .title {
+    @include text($fontPoppins, 22px, 600, 1px, 1.2);
+    margin: 5px 0 5px;
+    @media screen and (max-width: 1024px) {
+      margin: 25px 0 10px;
+      font-size: 24px;
+    }
+  }
+
+  .description {
+    @include text($fontPoppins, 14px, 400, 1px, 1.8);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    overflow: auto;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+
+

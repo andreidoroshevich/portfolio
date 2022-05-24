@@ -1,0 +1,13 @@
+@import "../styles/sass/mixins";
+
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    @include flex(center,space-between);
+    flex-wrap: wrap;
+@media screen and (max-width: 1024px) {
+    justify-content: center;
+}
+}
+

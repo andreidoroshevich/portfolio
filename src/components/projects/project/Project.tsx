@@ -1,17 +1,19 @@
 import React from 'react';
-import s from './Project.module.css'
+import s from './Project.module.scss'
+import Button from "../../../common/button/Button";
 
 type ProjectPropsType = {
     title: string
     description: string
+    style: any
 }
 
 
 function Project(props: ProjectPropsType) {
     return (
         <div className={s.project}>
-            <div className={s.image}>
-                <button className={s.button}>Watch</button>
+            <div className={s.image} style={props.style}>
+                <Button title={"Watch"} callBack={()=>{}}/>
             </div>
             <div className={s.descriptionMainContainer}>
                 <div className={s.descriptionContainer}>

@@ -1,0 +1,76 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+.project {
+  width: 550px;
+  margin-bottom: 30px;
+
+  .image {
+    width: 100%;
+    min-height: 300px;
+    @include flex(center, center);
+    background-color: $bgFirstColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $bgSecondColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.5;
+    }
+  }
+
+  .descriptionMainContainer {
+    width: 100%;
+    min-height: 100px;
+    @include flex(center, space-between);
+    flex-direction: column;
+    background-color: $bgFirstColor;
+
+    .descriptionContainer {
+      width: 80%;
+      @include flex(flex-start, flex-end);
+      flex-direction: column;
+      margin: 20px 0 20px 0;
+      .title {
+        @include text($fontPoppins, 16px, 500,  1px, 1.2);
+        margin: 10px 0 10px;
+        @media screen and (max-width: 1024px) {
+          margin-left: 10px;
+        }
+      }
+
+      .description {
+        @include text($fontPoppins, 14px, 400,  1.2px, 1);
+        @include flex(start, flex-start);
+        @media screen and (max-width: 1024px) {
+          margin-bottom: 20px;
+          margin-left: 10px;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        margin-top: 10px;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

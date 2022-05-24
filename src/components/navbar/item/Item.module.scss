@@ -1,0 +1,8 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+.a {
+    @include text($fontPoppins, 16px, 500, 1px, 1.2);
+    text-decoration: none;
+    cursor: pointer;
+}

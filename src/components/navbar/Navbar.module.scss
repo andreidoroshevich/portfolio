@@ -1,0 +1,15 @@
+@import "../../common/styles/sass/mixins";
+
+.navbar {
+  width: 300px;
+  @include flex(center, space-between);
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media screen and (max-width: 1024px) {
+    margin-right: 0;
+    font-size: 22px;
+  }
+}
+
+

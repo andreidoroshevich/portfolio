@@ -1,0 +1,31 @@
+@import "../styles/sass/variables";
+@import "../styles/sass/mixins";
+
+
+.title {
+  margin-bottom: 30px;
+  &::after {
+    content: "";
+    background: #4e93e6;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  h2 {
+    @include text($fontJosefin,36px,500,5px,1.2);
+    margin: 0;
+    text-transform: capitalize;
+    position: relative;
+    @media screen and (max-width: 1024px) {
+      font-size: 36px;
+    }
+
+  }
+}
+
+
+
+

@@ -1,17 +1,37 @@
 import React from 'react';
-import s from './Skills.module.css'
-import styleContainer from "../../common/styles/Container.module.css";
+import s from './Skills.module.scss'
+import styleContainer from "../../common/styles/Container.module.scss";
 import Skill from "./skill/Skill";
+import Title from "../../common/title/Title";
+import jsImage from "../../assets/images/js.png"
+import cssImage from "../../assets/images/css.png"
+import reactImage from "../../assets/images/react.png"
+
+
 
 function Skills() {
+    const js = {
+        backgroundImage: `url(${jsImage})`,
+    }
+
+    const css = {
+        backgroundImage: `url(${cssImage})`,
+    }
+
+    const react = {
+        backgroundImage: `url(${reactImage})`,
+    }
+
+
+
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2 className={s.title}>My Skills</h2>
+                <Title title={"My Skills"}/>
                 <div className={s.skills}>
-                    <Skill title={"JS"} description={"detailed description of the skill"}/>
-                    <Skill title={"CSS"} description={"detailed description of the skill"}/>
-                    <Skill title={"React"} description={"detailed description of the skill"}/>
+                    <Skill style={js} title={"JS"} description={"detailed description of the skill"}/>
+                    <Skill style={css} title={"CSS"} description={"detailed description of the skill"}/>
+                    <Skill style={react} title={"React"} description={"detailed description of the skill"}/>
                 </div>
             </div>
 
