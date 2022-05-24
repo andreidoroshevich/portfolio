@@ -4,10 +4,10 @@
 .mainBlock {
   min-height: 100vh;
   background-color: $bgSecondColor;
-  @include flex(center, center);
+  @include flex(center, space-around);
 
   .mainContainer {
-    @include flex(center, center);
+    @include flex(center, space-around);
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
