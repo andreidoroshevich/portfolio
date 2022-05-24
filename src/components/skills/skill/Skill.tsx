@@ -9,8 +9,6 @@ type SkillPropsType = {
 
 
 function Skill(props: SkillPropsType) {
-
-
     return (
         <div className={s.skill}>
             <div className={s.icon}>
