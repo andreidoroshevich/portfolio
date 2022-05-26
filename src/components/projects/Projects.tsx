@@ -4,7 +4,7 @@ import styleContainer from "../../common/styles/Container.module.scss";
 import Project from "./project/Project";
 import Title from "../../common/title/Title";
 import todoImage from "../../assets/images/todo.png"
-import socialImage from "../../assets/images/social.jpg"
+import socialImage from "../../assets/images/social.png"
 import counterImage from "../../assets/images/counter.png"
 import bookshelfImage from "../../assets/images/bookshelf.png"
 
