@@ -8,7 +8,12 @@ import socialImage from "../../assets/images/social.png"
 import counterImage from "../../assets/images/counter.png"
 import bookshelfImage from "../../assets/images/bookshelf.png"
 
-function Projects() {
+type ProjectsPropsType = {
+    id: string
+}
+
+
+function Projects(props: ProjectsPropsType) {
     const social = {
         backgroundImage: `url(${socialImage})`,
     }
@@ -28,7 +33,7 @@ function Projects() {
 
 
     return (
-        <div className={s.projectsBlock}>
+        <div className={s.projectsBlock} id={props.id}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <Title title={"My Projects"}/>
                 <div className={s.projects}>

@@ -2,9 +2,13 @@ import React from 'react';
 import s from './Main.module.scss'
 import styleContainer from '../../common/styles/Container.module.scss'
 
-function Main() {
+type MainPropsType = {
+    id: string
+}
+
+function Main(props: MainPropsType) {
     return (
-        <div className={s.mainBlock}>
+        <div className={s.mainBlock}  id={props.id}>
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
                 <div className={s.text}>
                     <span>Hi there!</span>

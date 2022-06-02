@@ -3,33 +3,42 @@
 
 
 .skillsBlock {
-    @include flex(center, space-between);
-    background-color: $bgFirstColor;
-    min-height: 50vh;
-}
+  @include flex(center, space-between);
+  background-color: $bgFirstColor;
+  position: relative;
+  z-index: -1;
+  min-height: 50vh;
 
-.skillsContainer {
-    @include flex(center,flex-start);
+  .skillsContainer {
+    @include flex(center, flex-start);
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
-}
 
-.skills {
-    @include flex(center,space-around);
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1024px) {
-    .skillsContainer {
-        justify-content: flex-start;
-    }
     .skills {
-        justify-content: center;
+      @include flex(center, space-around);
+      width: 100%;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1024px) {
+        .skills {
+          justify-content: center;
+        }
+      }
+
     }
+
+    @media screen and (max-width: 1024px) {
+      .skillsContainer {
+        justify-content: flex-start;
+      }
+    }
+  }
 }
+
+
+
+
 
 
 

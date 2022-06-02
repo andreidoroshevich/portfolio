@@ -7,9 +7,11 @@ import jsImage from "../../assets/images/js.png"
 import cssImage from "../../assets/images/css.png"
 import reactImage from "../../assets/images/react.png"
 
+type SkillsPropsType = {
+    id: string
+}
 
-
-function Skills() {
+function Skills(props: SkillsPropsType) {
     const js = {
         backgroundImage: `url(${jsImage})`,
     }
@@ -25,7 +27,7 @@ function Skills() {
 
 
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id={props.id}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <Title title={"My Skills"}/>
                 <div className={s.skills}>

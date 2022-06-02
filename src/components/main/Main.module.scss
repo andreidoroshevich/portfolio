@@ -11,7 +11,9 @@
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
-
+    @media screen and (max-width: 1024px) {
+      @include flex(center, center);
+    }
     .text {
       @include text($fontJosefin, 24px, 700, 1px, 1.2);
       @include flex(center, center);

@@ -4,10 +4,14 @@ import styleContainer from "../../common/styles/Container.module.scss";
 import Title from "../../common/title/Title";
 import Button from "../../common/button/Button";
 
-function Contacts() {
+type ContactsPropsType = {
+    id: string
+}
+
+function Contacts(props: ContactsPropsType) {
     return (
         <div className={s.contactsBlock}>
-            <div className={`${styleContainer.container} ${s.contactsContainer}`}>
+            <div className={`${styleContainer.container} ${s.contactsContainer}`} id={props.id}>
                 <Title title={"Contacts"}/>
                 <form className={s.form}>
                     <input className={s.input} type={"text"}/>

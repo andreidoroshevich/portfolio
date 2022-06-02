@@ -11,11 +11,11 @@ function App() {
     return (
         <div>
             <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <Contacts/>
-            <Footer/>
+            <Main id={"main"}/>
+            <Skills id={"skills"}/>
+            <Projects id={"projects"}/>
+            <Contacts id={"contacts"}/>
+            <Footer id={"links"}/>
         </div>
     );
 }

@@ -7,7 +7,11 @@ import codewarsLogo from "../../assets/images/codewars-logo.png"
 import linkedinLogo from "../../assets/images/linkedin-logo.png"
 import telegramLogo from "../../assets/images/telegram-logo.png"
 
-function Footer() {
+type FooterPropsType = {
+    id: string
+}
+
+function Footer(props: FooterPropsType) {
     const github = {
         backgroundImage: `url(${githubLogo})`,
     }
@@ -27,7 +31,7 @@ function Footer() {
 
     return (
         <div className={s.footerBlock}>
-            <div className={`${styleContainer.container} ${s.footerContainer}`}>
+            <div className={`${styleContainer.container} ${s.footerContainer}`} id={props.id}>
 
                 <h3 className={s.title}>Andrei Darashevich</h3>
 
