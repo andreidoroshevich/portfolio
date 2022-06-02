@@ -6,6 +6,8 @@
   @include flex(center, space-around);
   background-color: $bgFirstColor;
   min-height: 50vh;
+  position: relative;
+  z-index: -1;
 
   .contactsContainer {
     flex-direction: column;
