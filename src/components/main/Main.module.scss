@@ -25,6 +25,10 @@
         width: 450px;
         font-size: 22px;
       }
+      .profile {
+        font-size: 18px;
+        font-weight: 300;
+      }
     }
     .photo {
       @include flex(center, center);
