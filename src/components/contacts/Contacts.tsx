@@ -10,8 +10,8 @@ type ContactsPropsType = {
 
 function Contacts(props: ContactsPropsType) {
     return (
-        <div className={s.contactsBlock}>
-            <div className={`${styleContainer.container} ${s.contactsContainer}`} id={props.id}>
+        <div className={s.contactsBlock} id={props.id}>
+            <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <Title title={"Contacts"}/>
                 <form className={s.form}>
                     <input className={s.input} type={"text"}/>
