@@ -14,9 +14,9 @@ function Contacts(props: ContactsPropsType) {
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <Title title={"Contacts"}/>
                 <form className={s.form}>
-                    <input className={s.input} type={"text"}/>
-                    <input className={s.input} type={"text"}/>
-                    <textarea className={s.textarea}></textarea>
+                    <input placeholder={"Your name"} className={s.input} type={"text"}/>
+                    <input placeholder={"Your email"} className={s.input} type={"text"}/>
+                    <textarea placeholder={"Your message"} className={s.textarea}></textarea>
                 </form>
                 <Button title={"Send"} callBack={()=>{}}/>
             </div>
