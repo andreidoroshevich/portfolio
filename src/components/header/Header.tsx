@@ -5,7 +5,7 @@ import StickyBox from "react-sticky-box";
 
 function Header() {
     return (
-        <StickyBox offsetTop={0} offsetBottom={20}>
+        <StickyBox offsetTop={0} offsetBottom={20} className={s.header}>
         <div className={s.header}>
             <Navbar/>
         </div>
