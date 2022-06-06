@@ -139,6 +139,7 @@ body {
       &:after {
         background:$primaryColor;
       }
+      cursor: pointer
     }
 
     .nav__cb:checked ~ & {
