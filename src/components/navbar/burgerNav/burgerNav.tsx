@@ -30,11 +30,11 @@ const BurgerNav = () => {
             <Item itemTitle={"Contacts"} id={"contacts"}/>
         </span>
                         </li>
-        {/*                <li className="nav__item">*/}
-        {/*<span className="nav__item-text">*/}
-        {/*    <Item itemTitle={"Links"} id={"links"}/>*/}
-        {/*</span>*/}
-        {/*                </li>*/}
+                        <li className="nav__item">
+        <span className="nav__item-text">
+            <Item itemTitle={"Links"} id={"links"}/>
+        </span>
+                        </li>
 
                     </ul>
                 </div>
