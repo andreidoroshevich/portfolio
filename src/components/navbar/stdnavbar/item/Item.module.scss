@@ -10,8 +10,8 @@
         color: $primaryColor;
     }
     @media screen and (max-width: 1024px) {
-        @include text($fontPoppins, 8px, 300, 1px, 1.2);
-        margin-left: 5px;
+        @include text($fontPoppins, 11px, 300, 1px, 1.2);
+        margin-left: 0px;
     }
 
 
