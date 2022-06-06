@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Header.module.scss'
-import Navbar from "../navbar/Navbar";
+import Navbar from "../navbar/stdnavbar/Navbar";
 import StickyBox from "react-sticky-box";
 
 function Header() {
