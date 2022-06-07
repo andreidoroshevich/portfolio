@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './burgerNav.scss'
-import Item from "../stdnavbar/item/Item";
+import Item from "../item/Item";
 
 const BurgerNav = () => {
 
@@ -38,7 +38,7 @@ const BurgerNav = () => {
 
                     </ul>
                 </div>
-                <label className="nav__btn" htmlFor="menu-cb"></label>
+                <label className="nav__btn" htmlFor="menu-cb"/>
             </nav>
         </div>
     );

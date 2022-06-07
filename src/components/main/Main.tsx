@@ -13,16 +13,16 @@ function Main(props: MainPropsType) {
                 <div className={s.text}>
                     <span>Hi there!</span>
                     <h1>I am Andrei Darashevich</h1>
-                    <p>
+                    <div>
                         Front-End developer
-                    </p>
+                    </div>
 
-                    <p className={s.profile}>
+                    <div className={s.profile}>
                         Front-End developer with experience in creating SPA using React, Redux, Typescript, HTML, CSS/SCSS, JS.
-                    </p>
-                    <p className={s.profile}>
-                        Also I have an interest in improving my English.
-                    </p>
+                    </div>
+                    <div className={s.profile}>
+                        I have an interest in improving my English.
+                    </div>
                     <p className={s.profile}>
                         Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.
                     </p>

@@ -23,7 +23,7 @@ body {
 
 .nav {
   position: relative;
-  right: 0;
+  left: 0;
   bottom: 50%;
   width: auto;
   height: $btnSize;
@@ -76,7 +76,7 @@ body {
     font-family: $fontPoppins;
     font-weight: 700;
     perspective: 1000px;
-    transition: color 0.7s;
+    transition: color 1s;
     cursor: pointer;
 
     &:hover {
@@ -117,7 +117,6 @@ body {
     padding: $btnVertPad $btnHorPad;
     cursor: pointer;
 
-
     &:before,
     &:after {
       content: "";
@@ -127,7 +126,7 @@ body {
       border-radius: 2px;
       background: $textColor;
       transform-origin: 50% 50%;
-      transition: transform $navAT $cub, background-color 0.3s;
+      transition: transform $navAT $cub, background-color 1s;
     }
 
     &:before {

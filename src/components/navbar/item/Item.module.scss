@@ -1,5 +1,5 @@
-@import "../../../../common/styles/sass/variables";
-@import "../../../../common/styles/sass/mixins";
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
 
 .a {
     @include text($fontPoppins, 16px, 500, 1px, 1.2);
@@ -10,8 +10,8 @@
         color: $primaryColor;
     }
     @media screen and (max-width: 1024px) {
-        @include text($fontPoppins, 11px, 300, 1px, 1.2);
-        margin-left: 0px;
+        @include text($fontPoppins, 13px, 400, 0, 1);
+        margin-left: 0;
     }
 
 

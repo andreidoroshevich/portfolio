@@ -31,9 +31,9 @@ function Skills(props: SkillsPropsType) {
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <Title title={"My Skills"}/>
                 <div className={s.skills}>
-                    <Skill style={js} title={"JS"} description={"detailed description of the skill"}/>
-                    <Skill style={css} title={"CSS"} description={"detailed description of the skill"}/>
-                    <Skill style={react} title={"React"} description={"detailed description of the skill"}/>
+                    <Skill style={js} title={"JS/TS"} description={"detailed description of the skill"}/>
+                    <Skill style={css} title={"CSS/SCSS"} description={"detailed description of the skill"}/>
+                    <Skill style={react} title={"React/Redux"} description={"detailed description of the skill"}/>
                 </div>
             </div>
 
