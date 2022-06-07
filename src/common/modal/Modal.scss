@@ -38,9 +38,8 @@
     transform: scale(0.5);
     transition: 0.4s all;
     .messageText {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+        font-size: 18px;
 
     }
 }
