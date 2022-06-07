@@ -38,6 +38,9 @@
     text-align: center;
     transform: scale(0.5);
     transition: 0.4s all;
+    .messageText {
+        text-align: center;
+    }
 }
 
 .modal-content.active {

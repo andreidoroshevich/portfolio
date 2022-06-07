@@ -13,7 +13,7 @@ const Modal = (props: ModalType) => {
     return (
         <div className={props.active ? 'modal active' : 'modal'}>
             <div className={props.active ? 'modal-content active' : 'modal-content'}>
-                <div>Your message was sent successful!</div>
+                <div className={"messageText"}>Your message was sent successful!</div>
                 <Button title={'OK'} callBack={() => props.setModalActive(false)}/>
             </div>
 
