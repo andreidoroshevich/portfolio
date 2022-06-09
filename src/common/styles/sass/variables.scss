@@ -12,7 +12,7 @@ $lineW: 20px;
 $lineH: 4px;
 $linesGap: 10px;
 $linesTotalH: $lineH*2 + $linesGap;
-$btnHorPad: ($btnSize - $lineW) / 2;
+$btnHorPad: ($btnSize) / 10;
 $btnVertPad: ($btnSize - $linesTotalH) / 2;
 
 

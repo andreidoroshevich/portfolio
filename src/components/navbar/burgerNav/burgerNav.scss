@@ -13,7 +13,7 @@ body {
     content: "";
     display: block;
     height: 50%;
-    background: $primaryColor;
+    background: $textColor;
   }
 
   &:after {
@@ -22,16 +22,15 @@ body {
 }
 
 .nav {
-  position: relative;
+  position: absolute;
   left: 0;
-  bottom: 50%;
-  width: auto;
+  bottom: 25%;
+  width: 100%;
   height: $btnSize;
   margin-top: $btnSize/-10;
   background-color: $bgFirstColor;
   border-radius: 5px;
   transform: translate3d(0,0,0);
-  box-shadow: 0 10px 35px rgba(0,0,0,0.5);
 
   &__cb {
     z-index: -1000;
@@ -68,13 +67,13 @@ body {
     display: inline-block;
     vertical-align: top;
     width: $itemWidth;
-    margin-right: 20px;
+    margin-left: 10px;
     text-align: center;
     color: #6C7784;
-    font-size: 14px;
     line-height: $btnSize;
     font-family: $fontPoppins;
     font-weight: 700;
+    font-size: 24px;
     perspective: 1000px;
     transition: color 1s;
     cursor: pointer;
@@ -155,9 +154,10 @@ body {
 
   @media screen and (min-width: 1024px) {
     margin-right: 0;
-    font-size: 12px;
+    font-size: 16px;
     display: none;
-    font-weight: 600;
+    font-weight: 500;
+
   }
 
 }
