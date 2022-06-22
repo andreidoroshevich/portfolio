@@ -11,7 +11,6 @@ type ItemType = {
 
 const Item = (props: ItemType) => {
     return (
-            // <a className={s.a} href="">{props.itemTitle}</a>
     <Link
         className={s.a}
         activeClass="active"

@@ -6,6 +6,7 @@ type ProjectPropsType = {
     title: string
     description: string
     style: any
+    url: string
 }
 
 
@@ -13,7 +14,7 @@ function Project(props: ProjectPropsType) {
     return (
         <div className={s.project}>
             <div className={s.image} style={props.style}>
-                <Button title={"Watch"} callBack={()=>{}}/>
+                <Button title={"Watch"} callBack={()=>{window.open(props.url, "_blank")}}/>
             </div>
             <div className={s.descriptionMainContainer}>
                 <div className={s.descriptionContainer}>

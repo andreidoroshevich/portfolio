@@ -27,22 +27,36 @@
       }
       .profile {
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 500;
         margin-top: 10px;
         margin-bottom: 10px;
       }
     }
     .photo {
       @include flex(center, center);
-      width: 400px;
-      height: 400px;
-      background-color: $bgFirstColor;
+      width: 350px;
+      height: 420px;
+      background-color: $bgSecondColor;
       color: $textColor;
+      border: 4px solid $primaryColor;
       @media screen and (max-width: 1024px) {
         width: 320px;
-        height: 320px;
+        height: 390px;
         margin-top: 10px;
         margin-bottom: 10px;
+      }
+      .img {
+        @include flex(center, center);
+        width: 340px;
+        background-color: $bgFirstColor;
+        margin-right: 40px;
+        color: $textColor;
+        @media screen and (max-width: 1024px) {
+          width: 310px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
       }
     }
 

@@ -5,6 +5,7 @@ import Title from "../../common/title/Title";
 import styles from "../../common/button/Button.module.scss"
 import emailjs from "emailjs-com"
 import Modal from "../../common/modal/Modal";
+import {Fade} from "../main/Main";
 
 
 type ContactsPropsType = {
@@ -31,17 +32,19 @@ function Contacts(props: ContactsPropsType) {
         <>
             <div className={s.contactsBlock} id={props.id}>
                 <div className={`${styleContainer.container} ${s.contactsContainer}`}>
-                    <Title title={"Contacts"}/>
-                    <form className={s.form} onSubmit={sendEmail}>
-                        <input required placeholder={"Your name"} className={s.input} type={"text"} name={"name"}/>
-                        <input placeholder={"Your phone number"} className={s.input} type={"text"}
-                               name={"phone-number"}/>
-                        <input required placeholder={"Your email"} className={s.input} type={"text"}
-                               name={"user-email"}/>
-                        <textarea required placeholder={"Your message"} className={s.textarea} name={"message"}/>
-                        <button type={'submit'} value={"Send"} className={styles.button}>Send</button>
+                    <Fade bottom>
+                        <Title title={"Contacts"}/>
+                        <form className={s.form} onSubmit={sendEmail}>
+                            <input required placeholder={"Your name"} className={s.input} type={"text"} name={"name"}/>
+                            <input placeholder={"Your phone number"} className={s.input} type={"text"}
+                                   name={"phone-number"}/>
+                            <input required placeholder={"Your email"} className={s.input} type={"text"}
+                                   name={"user-email"}/>
+                            <textarea required placeholder={"Your message"} className={s.textarea} name={"message"}/>
+                            <button type={'submit'} value={"Send"} className={styles.button}>Send</button>
 
-                    </form>
+                        </form>
+                    </Fade>
                 </div>
             </div>
 
