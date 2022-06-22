@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a3dae1d9.css",
-    "main.js": "/portfolio/static/js/main.16000f20.js",
+    "main.css": "/portfolio/static/css/main.4a43df46.css",
+    "main.js": "/portfolio/static/js/main.7d8f0d0f.js",
+    "static/media/myPhoto.jpg": "/portfolio/static/media/myPhoto.3db45a02a3bc85f91810.jpg",
     "static/media/todo.png": "/portfolio/static/media/todo.6ecefc06196cf064e0d8.png",
     "static/media/social.png": "/portfolio/static/media/social.639582f42228f9938d1f.png",
     "static/media/bookshelf.png": "/portfolio/static/media/bookshelf.3edad1e24d2a45d5144b.png",
+    "static/media/carRent.png": "/portfolio/static/media/carRent.a7460d71bef846ef9632.png",
     "static/media/css.png": "/portfolio/static/media/css.60c923e2618c881c9f2d.png",
     "static/media/linkedin-logo.png": "/portfolio/static/media/linkedin-logo.c8da84529af1751057a9.png",
     "static/media/react.png": "/portfolio/static/media/react.7a217a052dd8e34540f5.png",
     "static/media/telegram-logo.png": "/portfolio/static/media/telegram-logo.66a06c6dba339eed2d00.png",
     "static/media/js.png": "/portfolio/static/media/js.286d4c70d4c104242aba.png",
-    "static/media/counter.png": "/portfolio/static/media/counter.84fe49fd23f11f0c3a42.png",
     "static/media/codewars-logo.png": "/portfolio/static/media/codewars-logo.23ba8b3882600a94a0b6.png",
     "index.html": "/portfolio/index.html",
-    "main.a3dae1d9.css.map": "/portfolio/static/css/main.a3dae1d9.css.map",
-    "main.16000f20.js.map": "/portfolio/static/js/main.16000f20.js.map"
+    "main.4a43df46.css.map": "/portfolio/static/css/main.4a43df46.css.map",
+    "main.7d8f0d0f.js.map": "/portfolio/static/js/main.7d8f0d0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3dae1d9.css",
-    "static/js/main.16000f20.js"
+    "static/css/main.4a43df46.css",
+    "static/js/main.7d8f0d0f.js"
   ]
 }
