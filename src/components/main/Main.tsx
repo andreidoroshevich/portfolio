@@ -43,16 +43,16 @@ function Main(props: MainPropsType) {
                         </div>
 
                         <div className={s.profile}>
-                            Front-End developer with experience in creating SPA using React, Redux, Typescript, HTML,
-                            CSS/SCSS, JS.
+                            Enthusiastic front-developer with 10 months of experience in web development and design.
+
                         </div>
                         <div className={s.profile}>
-                            Now I am improving my skills in this direction and expanding them with new technologies.
-                            I spend my leisure time with educational books and also improving my English.
+                            Completed several courses with high grades and recognition of trainers.
+                            Extremely passionate towards software architecture and design combined with sensitivity to
+                            serve the needs of the business balanced with the delivery of high-quality solutions.
                         </div>
                         <p className={s.profile}>
-                            Able to effectively self-manage during independent projects, as well as collaborate as part
-                            of a productive team.
+                            Looking for an opportunity to grow front-end development skills in an innovative environment.
                         </p>
                     </div>
                 </Fade>

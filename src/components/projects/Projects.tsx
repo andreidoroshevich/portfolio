@@ -3,11 +3,18 @@ import s from './Projects.module.scss'
 import styleContainer from "../../common/styles/Container.module.scss";
 import Project from "./project/Project";
 import Title from "../../common/title/Title";
-import todoImage from "../../assets/images/todo.png"
+import todoImage from "../../assets/images/todo.jpg"
 import socialImage from "../../assets/images/social.png"
 import carRentImage from "../../assets/images/carRent.png"
-import bookshelfImage from "../../assets/images/bookshelf.png"
+import bookshelfImage from "../../assets/images/bookshelf.jpg"
 import {Fade} from "../main/Main";
+import {
+    bookShelfDescription,
+    carRentDescription,
+    socialNetworkDescription,
+    todoDescription
+} from "./project/ProjectsDiscriptions";
+import ProjectDescriptor from "./project/ProjectDescriptor";
 
 type ProjectsPropsType = {
     id: string
@@ -39,23 +46,48 @@ function Projects(props: ProjectsPropsType) {
                     <Title title={"My Projects"}/>
 
                     <div className={s.projects}>
-                        <Project style={social}
-                                 url={'https://andreidoroshevich.github.io/social-network'}
-                                 title={"Social Network"}
-                                 description={"Stack: TypeScript, React, Redux, Redux-Thunk, react hooks, reducers, React-Router-dom, Axios, Formik; Bug fixing, deploying."}/>
-
                         <Project style={todo}
                                  url={'https://andreidoroshevich.github.io/to-do-list'}
-                                 title={"ToDo List"}
-                                 description={"Stack: TypeScript, React, Redux-thunk, Router-dom, react hooks, reducers, Axios, Mui, Formik, Storybook; Bug fixing, deploying; Covering code with unit tests"}/>
+                                 title={"ToDo List, Front-end developer (educational project)"}
+                                 stackTitle={'Technology stack: '}
+                                 stack={"TypeScript, React, Redux-thunk, Router-dom, react hooks," +
+                                     " reducers, Axios, Mui, Formik, Storybook; Bug fixing, deploying;" +
+                                     " Covering code with unit tests"}
+                                 descriptionTitle={'Project description:'}
+                                 description={
+                                     <ul>{todoDescription.map(d => <ProjectDescriptor title={d.title}/>)}</ul>}
+                        />
+
+                        <Project style={social}
+                                 url={'https://andreidoroshevich.github.io/social-network'}
+                                 title={"Social Network, Front-end developer (self-educational project)"}
+                                 stackTitle={'Technology stack: '}
+                                 stack={"TypeScript, React, Redux, Redux-Thunk, react hooks, reducers," +
+                                     " React-Router-dom, Axios, Formik; Bug fixing, deploying."}
+                                 descriptionTitle={'Project description:'}
+                                 description={
+                                     <ul>{socialNetworkDescription.map(d => <ProjectDescriptor title={d.title}/>)}</ul>}
+                        />
+
                         <Project style={bookshelf}
                                  url={'https://andreidoroshevich.github.io/bookshelf'}
-                                 title={"BookShelf"}
-                                 description={"Stack: TypeScript, React, react hooks, reducers, localStorage, deploying."}/>
+                                 title={"BookShelf, Front-end developer (educational project)"}
+                                 stackTitle={'Technology stack: '}
+                                 stack={"TypeScript, React, react hooks, reducers, localStorage, deploying."}
+                                 descriptionTitle={'Project description:'}
+                                 description={
+                                     <ul>{bookShelfDescription.map(d => <ProjectDescriptor title={d.title}/>)}</ul>}
+                        />
                         <Project style={carRent}
                                  url={'https://andreidoroshevich.github.io'}
-                                 title={"CarRent"}
-                                 description={"Stack: HTML, css, JS, Local Storage, deploying"}/>
+                                 title={"CarRent, Front-end developer (educational project)"}
+                                 stackTitle={'Technology stack: '}
+                                 stack={"HTML, css, JS, Local Storage, deploying"}
+                                 descriptionTitle={'Project description:'}
+                                 description={
+                                     <ul>{carRentDescription.map(d => <ProjectDescriptor title={d.title}/>)}</ul>
+                                 }
+                        />
                     </div>
                 </div>
             </Fade>

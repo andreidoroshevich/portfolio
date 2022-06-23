@@ -32,9 +32,9 @@ function Skills(props: SkillsPropsType) {
                 <Fade bottom>
                     <Title title={"My Skills"}/>
                     <div className={s.skills}>
-                        <Skill style={js} title={"JS/TS"} description={"detailed description of the skill"}/>
-                        <Skill style={css} title={"CSS/SCSS"} description={"detailed description of the skill"}/>
-                        <Skill style={react} title={"React/Redux"} description={"detailed description of the skill"}/>
+                        <Skill style={js} title={"JS/TS"} description={""}/>
+                        <Skill style={css} title={"CSS/SCSS"} description={""}/>
+                        <Skill style={react} title={"React/Redux"} description={""}/>
                     </div>
                 </Fade>
             </div>
