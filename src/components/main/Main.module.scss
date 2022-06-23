@@ -14,6 +14,7 @@
     @media screen and (max-width: 1024px) {
       @include flex(center, center);
     }
+
     .text {
       @include text($fontJosefin, 24px, 600, 1px, 1.4);
       @include flex(center, center);
@@ -25,6 +26,7 @@
         width: 450px;
         font-size: 22px;
       }
+
       .profile {
         font-size: 18px;
         font-weight: 500;
@@ -32,6 +34,7 @@
         margin-bottom: 10px;
       }
     }
+
     .photo {
       @include flex(center, center);
       width: 330px;
@@ -45,18 +48,24 @@
         margin-top: 10px;
         margin-bottom: 10px;
       }
+
       .img {
         @include flex(center, center);
         width: 320px;
         background-color: $bgFirstColor;
         margin-right: 40px;
         color: $textColor;
+
+        &:hover {
+          transform: scale(1.2, 1.2);
+          transition: 0.5s;
+        }
+
         @media screen and (max-width: 1024px) {
           width: 280px;
           margin-top: 10px;
           margin-bottom: 10px;
         }
-
       }
     }
 
