@@ -13,8 +13,8 @@ import {
     carRentDescription,
     socialNetworkDescription,
     todoDescription
-} from "./project/ProjectsDiscriptions";
-import ProjectDescriptor from "./project/ProjectDescriptor";
+} from "./project/descriptions/ProjectsDiscriptions";
+import ProjectDescriptor from "./project/descriptions/ProjectDescriptor";
 
 type ProjectsPropsType = {
     id: string

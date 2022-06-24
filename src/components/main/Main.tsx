@@ -3,7 +3,7 @@ import s from './Main.module.scss'
 import styleContainer from '../../common/styles/Container.module.scss'
 import myPhoto from '../../assets/images/myPhoto.jpg'
 import ReactTypingEffect from 'react-typing-effect'
-import Particles from "react-tsparticles";
+// import Particles from "react-tsparticles";
 
 
 type MainPropsType = {
@@ -11,26 +11,26 @@ type MainPropsType = {
 }
 export const Fade = require("react-reveal/Fade")
 
-const particlesOptions = {
-    particles:{
-        number: {
-            value: 80,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        }
+// const particlesOptions = {
+//     particles:{
+//         number: {
+//             value: 80,
+//             density: {
+//                 enable: true,
+//                 value_area: 800
+//             }
+//         }
+//
+//     }
+// }
 
-    }
-}
 
 function Main(props: MainPropsType) {
     return (
         <div className={s.mainBlock} id={props.id}>
-            <Particles className={s.particles} params={particlesOptions}/>
+            {/*<Particles className={s.particles} params={particlesOptions}/>*/}
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
                 <Fade left>
-
                     <div className={s.text}>
                         <span>Hi there!</span>
                         <h1>
