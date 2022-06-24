@@ -44,7 +44,7 @@ function Main(props: MainPropsType) {
                 </Fade>
                 <Fade right>
                     <div className={s.photo}>
-                        <img className={s.img} src={myPhoto} alt={"myLostPhoto"}/>
+                        <img className={s.img} src={myPhoto} alt={"lost"}/>
                     </div>
                 </Fade>
             </div>
