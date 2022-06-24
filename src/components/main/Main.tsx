@@ -3,32 +3,18 @@ import s from './Main.module.scss'
 import styleContainer from '../../common/styles/Container.module.scss'
 import myPhoto from '../../assets/images/myPhoto.jpg'
 import ReactTypingEffect from 'react-typing-effect'
-// import Particles from "react-tsparticles";
-
+import particlesConfig from '../../assets/particlesConfig.json'
 
 type MainPropsType = {
     id: string
 }
 export const Fade = require("react-reveal/Fade")
-
-// const particlesOptions = {
-//     particles:{
-//         number: {
-//             value: 80,
-//             density: {
-//                 enable: true,
-//                 value_area: 800
-//             }
-//         }
-//
-//     }
-// }
-
+const Particles = require('react-tsparticles')
 
 function Main(props: MainPropsType) {
     return (
         <div className={s.mainBlock} id={props.id}>
-            {/*<Particles className={s.particles} params={particlesOptions}/>*/}
+            <Particles params={particlesConfig} />
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
                 <Fade left>
                     <div className={s.text}>
@@ -58,7 +44,7 @@ function Main(props: MainPropsType) {
                 </Fade>
                 <Fade right>
                     <div className={s.photo}>
-                        <img className={s.img} src={myPhoto} alt={"photo"}/>
+                        <img className={s.img} src={myPhoto} alt={"myLostPhoto"}/>
                     </div>
                 </Fade>
             </div>

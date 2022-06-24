@@ -15,6 +15,7 @@ import {
     todoDescription
 } from "./project/descriptions/ProjectsDiscriptions";
 import ProjectDescriptor from "./project/descriptions/ProjectDescriptor";
+import {v1} from "uuid";
 
 type ProjectsPropsType = {
     id: string
@@ -66,7 +67,7 @@ function Projects(props: ProjectsPropsType) {
                                      " React-Router-dom, Axios, Formik; Bug fixing, deploying."}
                                  descriptionTitle={'Project description:'}
                                  description={
-                                     <ul>{socialNetworkDescription.map(d => <ProjectDescriptor title={d.title}/>)}</ul>}
+                                     <ul>{socialNetworkDescription.map(d => <ProjectDescriptor key={v1()} title={d.title}/>)}</ul>}
                         />
 
                         <Project style={bookshelf}

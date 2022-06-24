@@ -5,6 +5,8 @@
 .footerBlock {
   background-color: $bgSecondColor;
   @include flex(center, flex-end);
+  position: relative;
+  z-index: 0;
 
   .footerContainer {
     @include flex(center,space-between);
