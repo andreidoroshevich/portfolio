@@ -18,9 +18,8 @@ function Main(props: MainPropsType) {
             <div className={`${styleContainer.container} ${s.mainContainer}`}>
                 <Fade left>
                     <div className={s.text}>
-                        <span>Hi there!</span>
                         <h1>
-                            I am Andrei Darashevich</h1>
+                            Andrei Darashevich</h1>
                         <div>
                             <h3>
                             <ReactTypingEffect
