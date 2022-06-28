@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.abc1e8fc.css",
-    "main.js": "/portfolio/static/js/main.ea531adf.js",
+    "main.js": "/portfolio/static/js/main.8c14715f.js",
     "static/media/myPhoto.jpg": "/portfolio/static/media/myPhoto.02aa102d9fe0d29b5e77.jpg",
     "static/media/social.png": "/portfolio/static/media/social.639582f42228f9938d1f.png",
     "static/media/todo.jpg": "/portfolio/static/media/todo.dc0ef1217c254be80f1e.jpg",
@@ -15,10 +15,10 @@
     "static/media/codewars-logo.png": "/portfolio/static/media/codewars-logo.23ba8b3882600a94a0b6.png",
     "index.html": "/portfolio/index.html",
     "main.abc1e8fc.css.map": "/portfolio/static/css/main.abc1e8fc.css.map",
-    "main.ea531adf.js.map": "/portfolio/static/js/main.ea531adf.js.map"
+    "main.8c14715f.js.map": "/portfolio/static/js/main.8c14715f.js.map"
   },
   "entrypoints": [
     "static/css/main.abc1e8fc.css",
-    "static/js/main.ea531adf.js"
+    "static/js/main.8c14715f.js"
   ]
 }
