@@ -42,7 +42,6 @@ function Projects(props: ProjectsPropsType) {
 
     return (
         <div className={s.projectsBlock} id={props.id}>
-            <Fade left>
                 <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                     <Title title={"My Projects"}/>
 
@@ -91,7 +90,6 @@ function Projects(props: ProjectsPropsType) {
                         />
                     </div>
                 </div>
-            </Fade>
         </div>
 
     )
