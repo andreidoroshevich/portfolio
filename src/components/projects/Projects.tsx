@@ -7,7 +7,6 @@ import todoImage from "../../assets/images/todo.jpg"
 import socialImage from "../../assets/images/social.png"
 import carRentImage from "../../assets/images/carRent.png"
 import bookshelfImage from "../../assets/images/bookshelf.jpg"
-import {Fade} from "../main/Main";
 import {
     bookShelfDescription,
     carRentDescription,
